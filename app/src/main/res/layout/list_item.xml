@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/list_item_height"
+            android:layout_height="@dimen/list_item_height"
+            android:paddingLeft="8dp"
+            android:src="@drawable/map" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="@dimen/list_item_height"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingLeft="8dp">
+
+            <TextView
+                android:id="@+id/item_title"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/half_list_item_height"
+                android:gravity="bottom"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                tools:text="Sample Title" />
+
+            <TextView
+                android:id="@+id/item_description"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/half_list_item_height"
+                android:textSize="16sp"
+                tools:text="Sample Description blah blah blah" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/item_address"
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:paddingLeft="16dp"
+        android:textSize="16sp"
+        tools:text="Sample address blah blah blah" />
+
+</LinearLayout>
