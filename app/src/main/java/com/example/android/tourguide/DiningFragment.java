@@ -29,21 +29,21 @@ public class DiningFragment extends Fragment {
         // Create an ArrayList and populate it with TourItem custom objects
         final ArrayList<TourItem> tourItemsList = new ArrayList<>();
 
-        tourItemsList.add(new TourItem("Eiffel Tower",
-                "Located in the heart of downtown",
-                "Champ de Mars, 5 Avenue Anatole France, 75007 Paris"));
-        tourItemsList.add(new TourItem("Eiffel Tower",
-                "Located in the heart of downtown",
-                "Champ de Mars, 5 Avenue Anatole France, 75007 Paris"));
-        tourItemsList.add(new TourItem("Eiffel Tower",
-                "Located in the heart of downtown",
-                "Champ de Mars, 5 Avenue Anatole France, 75007 Paris"));
-        tourItemsList.add(new TourItem("Eiffel Tower",
-                "Located in the heart of downtown",
-                "Champ de Mars, 5 Avenue Anatole France, 75007 Paris"));
-        tourItemsList.add(new TourItem("Eiffel Tower",
-                "Located in the heart of downtown",
-                "Champ de Mars, 5 Avenue Anatole France, 75007 Paris"));
+        tourItemsList.add(new TourItem(getString(R.string.dining_1),
+                getString(R.string.dining_1_description),
+                getString(R.string.dining_1_hours),
+                true,
+                R.drawable.dinner_icon));
+        tourItemsList.add(new TourItem(getString(R.string.dining_2),
+                getString(R.string.dining_2_description),
+                getString(R.string.dining_1_hours),
+                true,
+                R.drawable.dinner_icon));
+        tourItemsList.add(new TourItem(getString(R.string.dining_3),
+                getString(R.string.dining_3_description),
+                getString(R.string.dining_1_hours),
+                true,
+                R.drawable.dinner_icon));
 
         // Construct a custom ArrayAdapter and give it tourItemsList ArrayList
         TourItemAdapter tourItemAdapter = new TourItemAdapter(getActivity(), tourItemsList, R.color.fragment_background);

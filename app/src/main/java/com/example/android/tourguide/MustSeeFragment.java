@@ -31,19 +31,34 @@ public class MustSeeFragment extends Fragment {
 
         tourItemsList.add(new TourItem(getString(R.string.must_see_1),
                 getString(R.string.must_see_1_description),
-                getString(R.string.must_see_1_address)));
+                getString(R.string.must_see_1_hours),
+                false,
+                R.drawable.map));
         tourItemsList.add(new TourItem(getString(R.string.must_see_2),
                 getString(R.string.must_see_2_description),
-                getString(R.string.must_see_2_address)));
-        tourItemsList.add(new TourItem("Eiffel Tower",
-                "Located in the heart of downtown",
-                "Hours:     Open now    9AM-12AM"));
-        tourItemsList.add(new TourItem("Eiffel Tower",
-                "Located in the heart of downtown",
-                "Champ de Mars, 5 Avenue Anatole France, 75007 Paris"));
-        tourItemsList.add(new TourItem("Eiffel Tower",
-                "Located in the heart of downtown",
-                "Champ de Mars, 5 Avenue Anatole France, 75007 Paris"));
+                getString(R.string.must_see_2_hours),
+                true,
+                R.drawable.map));
+        tourItemsList.add(new TourItem(getString(R.string.must_see_3),
+                getString(R.string.must_see_3_description),
+                getString(R.string.must_see_3_hours),
+                true,
+                R.drawable.map));
+        tourItemsList.add(new TourItem(getString(R.string.must_see_4),
+                getString(R.string.must_see_4_description),
+                getString(R.string.must_see_4_hours),
+                false,
+                R.drawable.map));
+        tourItemsList.add(new TourItem(getString(R.string.must_see_5),
+                getString(R.string.must_see_5_description),
+                getString(R.string.must_see_5_hours),
+                true,
+                R.drawable.map));
+        tourItemsList.add(new TourItem(getString(R.string.must_see_6),
+                getString(R.string.must_see_6_description),
+                getString(R.string.must_see_6_hours),
+                false,
+                R.drawable.map));
 
         // Construct a custom ArrayAdapter and give it tourItemsList ArrayList
         TourItemAdapter tourItemAdapter = new TourItemAdapter(getActivity(), tourItemsList, R.color.fragment_background);

@@ -1,5 +1,10 @@
 package com.example.android.tourguide;
 
+/**
+ * Created by Andrew Osborne for a Udacity course
+ *
+ * Icons made by Roundicons from www.flaticon.com
+ */
 
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;

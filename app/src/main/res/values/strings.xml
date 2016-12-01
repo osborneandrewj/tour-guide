@@ -1,24 +1,82 @@
 <resources>
     <string name="app_name">Visit Paris</string>
 
+    <!--Used for the open/closed text of each list item-->
+    <string name="open_text">Open now</string>
+    <string name="closed_text">Closed</string>
+    <!--Used for the hotels page-->
+    <string name="rooms_available_text">Available</string>
+    <string name="rooms_not_available_text">Full</string>
+    <string name="dollar_currency">\u0024</string>
 
-    <!-- Must See -->
+
+    <!--Must See Page-->
     <string name="must_see_1">Eiffel Tower</string>
     <string name="must_see_1_description">At 1,063 feet, it is the tallest structure in Paris</string>
-    <string name="must_see_1_address">Champ de Mars, 5 Avenue Anatole France, 75007 Paris</string>
+    <string name="must_see_1_hours">Hours: 9AM-12AM</string>
 
     <string name="must_see_2">Arc De Triomphe</string>
     <string name="must_see_2_description">Built to honor the fallen soldiers of France</string>
-    <string name="must_see_2_address">Place Charles de Gaulle, 75008 Paris</string>
+    <string name="must_see_2_hours">Hours: 9AM-12AM</string>
 
-    <string name="must_see_3"></string>
-    <string name="must_see_3_description"></string>
-    <string name="must_see_3_address"></string>
+    <string name="must_see_3">Montmarte</string>
+    <string name="must_see_3_description">See the studios of artists Monet, Picasso, and others</string>
+    <string name="must_see_3_hours">Hours: 9AM-12AM</string>
 
-    <string name="must_see_4"></string>
-    <string name="must_see_5"></string>
-    <string name="must_see_6"></string>
-    <string name="must_see_7"></string>
-    <string name="must_see_8"></string>
+    <string name="must_see_4">Sacr\u00E9-C\u0153ur</string>
+    <string name="must_see_4_description">A beautiful cathedral set atop Montmarte</string>
+    <string name="must_see_4_hours">Hours: 9AM-12AM</string>
+
+    <string name="must_see_5">Les Invalides</string>
+    <string name="must_see_5_description">Resting place of Napoleon and military museum</string>
+    <string name="must_see_5_hours">Hours: 9AM-12AM</string>
+
+    <string name="must_see_6">Notre Dame de Paris</string>
+    <string name="must_see_6_description">Iconic Gothic medieval Catholic cathedral</string>
+    <string name="must_see_6_hours">Hours: 9AM-12AM</string>
+
+    <!--Hotel page-->
+    <string name="hotel_1">Shangri-La Hotel Paris</string>
+    <string name="hotel_1_description">Located along Avenue de l\u00E9na\u002C this hotel is known for exceptional service</string>
+
+    <string name="hotel_2">H\u00F4tel Fouquet\u0027s Barri\u00E8re</string>
+    <string name="hotel_2_description">Recipient of 2013 Cond\u00E9 Nast Traveler World Savers Award</string>
+
+    <string name="hotel_3">W Paris</string>
+    <string name="hotel_3_description">Located next to Galeries Lafayette and Le Printemps</string>
+
+    <string name="hotel_4">Champs Elysees Plaza Hotel</string>
+    <string name="hotel_4_description">Five-star luxury hotel set in a world-famous shopping district</string>
+
+    <string name="hotel_5">Hotel Raphael</string>
+    <string name="hotel_5_description">Featuring views of the Arch de Triumph and the Eiffel Tower</string>
+
+    <string name="hotel_6">Residence Alma Marceau</string>
+    <string name="hotel_6_description">World class hotel featuring 10 full-service apartments</string>
+
+    <!--Dining page-->
+    <string name="dining_1">Les Tablettes</string>
+    <string name="dining_1_description">Fine dining from chef Jean-Louis Nomicos</string>
+    <string name="dining_1_hours">Hours: 3PM-12AM</string>
+
+    <string name="dining_2">Le Stella</string>
+    <string name="dining_2_description">French classics including escargots and steak tartare</string>
+    <string name="dining_2_hours">Hours: 3PM-12AM</string>
+
+    <string name="dining_3">Yam\u0027Tcha</string>
+    <string name="dining_3_description">Honk Kong meets Paris in the imagination of chef Adeline Grattard</string>
+    <string name="dining_3_hours">Hours: 3PM-12AM</string>
+
+    <string name="dining_4"></string>
+    <string name="dining_4_description"></string>
+    <string name="dining_4_hours">Hours: 3PM-12AM</string>
+
+    <string name="dining_5"></string>
+    <string name="dining_5_description"></string>
+    <string name="dining_5_hours">Hours: 3PM-12AM</string>
+
+    <string name="dining_6"></string>
+    <string name="dining_6_description"></string>
+    <string name="dining_6_hours">Hours: 3PM-12AM</string>
 
 </resources>

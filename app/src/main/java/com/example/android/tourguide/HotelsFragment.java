@@ -29,21 +29,49 @@ public class HotelsFragment extends Fragment {
         // Create an ArrayList and populate it with TourItem custom objects
         final ArrayList<TourItem> tourItemsList = new ArrayList<>();
 
-        tourItemsList.add(new TourItem("Eiffel Tower",
-                "Located in the heart of downtown",
-                "Champ de Mars, 5 Avenue Anatole France, 75007 Paris"));
-        tourItemsList.add(new TourItem("Eiffel Tower",
-                "Located in the heart of downtown",
-                "Champ de Mars, 5 Avenue Anatole France, 75007 Paris"));
-        tourItemsList.add(new TourItem("Eiffel Tower",
-                "Located in the heart of downtown",
-                "Champ de Mars, 5 Avenue Anatole France, 75007 Paris"));
-        tourItemsList.add(new TourItem("Eiffel Tower",
-                "Located in the heart of downtown",
-                "Champ de Mars, 5 Avenue Anatole France, 75007 Paris"));
-        tourItemsList.add(new TourItem("Eiffel Tower",
-                "Located in the heart of downtown",
-                "Champ de Mars, 5 Avenue Anatole France, 75007 Paris"));
+        tourItemsList.add(new TourItem(getString(R.string.hotel_1),
+                getString(R.string.hotel_1_description),
+                null,
+                true,
+                R.drawable.bed,
+                true,
+                1074));
+        tourItemsList.add(new TourItem(getString(R.string.hotel_5),
+                getString(R.string.hotel_5_description),
+                null,
+                true,
+                R.drawable.bed,
+                true,
+                529));
+        tourItemsList.add(new TourItem(getString(R.string.hotel_3),
+                getString(R.string.hotel_3_description),
+                null,
+                true,
+                R.drawable.bed,
+                true,
+                569));
+        tourItemsList.add(new TourItem(getString(R.string.hotel_4),
+                getString(R.string.hotel_4_description),
+                null,
+                false,
+                R.drawable.bed,
+                true,
+                594));
+        tourItemsList.add(new TourItem(getString(R.string.hotel_6),
+                getString(R.string.hotel_6_description),
+                null,
+                true,
+                R.drawable.bed,
+                true,
+                540));
+        tourItemsList.add(new TourItem(getString(R.string.hotel_2),
+                getString(R.string.hotel_2_description),
+                null,
+                false,
+                R.drawable.bed,
+                true,
+                1487));
+
 
         // Construct a custom ArrayAdapter and give it tourItemsList ArrayList
         TourItemAdapter tourItemAdapter = new TourItemAdapter(getActivity(), tourItemsList, R.color.fragment_background);
