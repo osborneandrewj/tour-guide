@@ -1,6 +1,24 @@
 <resources>
-    <string name="app_name">Tour Guide</string>
+    <string name="app_name">Visit Paris</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Must See -->
+    <string name="must_see_1">Eiffel Tower</string>
+    <string name="must_see_1_description">At 1,063 feet, it is the tallest structure in Paris</string>
+    <string name="must_see_1_address">Champ de Mars, 5 Avenue Anatole France, 75007 Paris</string>
+
+    <string name="must_see_2">Arc De Triomphe</string>
+    <string name="must_see_2_description">Built to honor the fallen soldiers of France</string>
+    <string name="must_see_2_address">Place Charles de Gaulle, 75008 Paris</string>
+
+    <string name="must_see_3"></string>
+    <string name="must_see_3_description"></string>
+    <string name="must_see_3_address"></string>
+
+    <string name="must_see_4"></string>
+    <string name="must_see_5"></string>
+    <string name="must_see_6"></string>
+    <string name="must_see_7"></string>
+    <string name="must_see_8"></string>
+
 </resources>

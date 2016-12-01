@@ -1,20 +1,33 @@
 package com.example.android.tourguide;
 
-import android.support.v7.app.AppCompatActivity;
+
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 
-public class ShoppingActivity extends AppCompatActivity {
+/**
+ * A simple {@link Fragment} subclass.
+ */
+public class DiningFragment extends Fragment {
+
+
+    public DiningFragment() {
+        // Required empty public constructor
+    }
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.list_view);
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        View rootView = inflater.inflate(R.layout.list_view, container, false);
 
         // Create an ArrayList and populate it with TourItem custom objects
-        ArrayList<TourItem> tourItemsList = new ArrayList<>();
+        final ArrayList<TourItem> tourItemsList = new ArrayList<>();
 
         tourItemsList.add(new TourItem("Eiffel Tower",
                 "Located in the heart of downtown",
@@ -33,11 +46,13 @@ public class ShoppingActivity extends AppCompatActivity {
                 "Champ de Mars, 5 Avenue Anatole France, 75007 Paris"));
 
         // Construct a custom ArrayAdapter and give it tourItemsList ArrayList
-        TourItemAdapter tourItemAdapter = new TourItemAdapter(getApplication(), tourItemsList);
+        TourItemAdapter tourItemAdapter = new TourItemAdapter(getActivity(), tourItemsList, R.color.fragment_background);
 
         // Create a ListView and set the custom ArrayAdapter as its adapter
-        ListView listView = (ListView)findViewById(R.id.list);
+        ListView listView = (ListView)rootView.findViewById(R.id.list);
         listView.setAdapter(tourItemAdapter);
 
+        return rootView;
     }
+
 }

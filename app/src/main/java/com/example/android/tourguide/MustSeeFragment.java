@@ -14,13 +14,12 @@ import java.util.ArrayList;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class ShoppingFragment extends Fragment {
+public class MustSeeFragment extends Fragment {
 
 
-    public ShoppingFragment() {
+    public MustSeeFragment() {
         // Required empty public constructor
     }
-
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -30,15 +29,15 @@ public class ShoppingFragment extends Fragment {
         // Create an ArrayList and populate it with TourItem custom objects
         final ArrayList<TourItem> tourItemsList = new ArrayList<>();
 
+        tourItemsList.add(new TourItem(getString(R.string.must_see_1),
+                getString(R.string.must_see_1_description),
+                getString(R.string.must_see_1_address)));
+        tourItemsList.add(new TourItem(getString(R.string.must_see_2),
+                getString(R.string.must_see_2_description),
+                getString(R.string.must_see_2_address)));
         tourItemsList.add(new TourItem("Eiffel Tower",
                 "Located in the heart of downtown",
-                "Champ de Mars, 5 Avenue Anatole France, 75007 Paris"));
-        tourItemsList.add(new TourItem("Eiffel Tower",
-                "Located in the heart of downtown",
-                "Champ de Mars, 5 Avenue Anatole France, 75007 Paris"));
-        tourItemsList.add(new TourItem("Eiffel Tower",
-                "Located in the heart of downtown",
-                "Champ de Mars, 5 Avenue Anatole France, 75007 Paris"));
+                "Hours:     Open now    9AM-12AM"));
         tourItemsList.add(new TourItem("Eiffel Tower",
                 "Located in the heart of downtown",
                 "Champ de Mars, 5 Avenue Anatole France, 75007 Paris"));

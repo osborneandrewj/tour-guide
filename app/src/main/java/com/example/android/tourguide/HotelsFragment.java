@@ -14,13 +14,12 @@ import java.util.ArrayList;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class ShoppingFragment extends Fragment {
+public class HotelsFragment extends Fragment {
 
 
-    public ShoppingFragment() {
+    public HotelsFragment() {
         // Required empty public constructor
     }
-
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
