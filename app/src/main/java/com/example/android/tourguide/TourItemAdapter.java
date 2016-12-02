@@ -10,6 +10,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
 import java.util.ArrayList;
 
 /**
@@ -20,14 +21,14 @@ import java.util.ArrayList;
 
 public class TourItemAdapter extends ArrayAdapter<TourItem> {
 
-    /** Used to set background color for each page **/
+    /**
+     * Used to set background color for each page
+     **/
     private int mBackgroundColor;
 
     /**
      * Constructor which is called when adapter created
      *
-     * @param context
-     * @param arrayList
      * @param aBackgroundColor is used to set the background color for the page
      */
     public TourItemAdapter(Context context, ArrayList<TourItem> arrayList, int aBackgroundColor) {
@@ -39,9 +40,6 @@ public class TourItemAdapter extends ArrayAdapter<TourItem> {
     /**
      * Connects the TourItem object to the xml layout
      *
-     * @param position of the ListView
-     * @param convertView
-     * @param parent
      * @return the complete listitem for the ListView
      */
     public View getView(int position, View convertView, ViewGroup parent) {
@@ -56,14 +54,14 @@ public class TourItemAdapter extends ArrayAdapter<TourItem> {
         //get the object we are displaying
         TourItem tourItem = getItem(position);
         // Set the appropriate text for each part of the list item
-        TextView itemTitle = (TextView)listItemView.findViewById(R.id.item_title);
+        TextView itemTitle = (TextView) listItemView.findViewById(R.id.item_title);
         itemTitle.setText(tourItem.getTourItemTitle());
-        TextView itemDescription = (TextView)listItemView.findViewById(R.id.item_description);
+        TextView itemDescription = (TextView) listItemView.findViewById(R.id.item_description);
         itemDescription.setText(tourItem.getTourItemDescription());
 
         // These TextViews will be set based on the following 'if' statement
-        TextView itemHours = (TextView)listItemView.findViewById(R.id.item_hours);
-        TextView isOpen = (TextView)listItemView.findViewById(R.id.item_open);
+        TextView itemHours = (TextView) listItemView.findViewById(R.id.item_hours);
+        TextView isOpen = (TextView) listItemView.findViewById(R.id.item_open);
 
         // Sets room availability and price if item is a hotel
         if (tourItem.isHotel()) {
@@ -76,13 +74,13 @@ public class TourItemAdapter extends ArrayAdapter<TourItem> {
                 // Set text color to green
                 isOpen.setTextColor(Color.parseColor("#388e3c"));
             } else {
-                // Set hotel status to full
+                // If no room available set hotel status to full
                 isOpen.setText(getContext().getString(R.string.rooms_not_available_text));
                 // Set text color to red
                 isOpen.setTextColor(Color.parseColor("#ff5252"));
             }
         } else {
-            // If the item is not a hotel set open/closed and hours text
+            // If the item is not a hotel set open/closed and hours text instead
             itemHours.setText(tourItem.getmTourItemHours());
             // The following sets the open/closed text and text color
             if (tourItem.getIsOpen()) {
@@ -99,7 +97,7 @@ public class TourItemAdapter extends ArrayAdapter<TourItem> {
         }
 
         // Set the icon image
-        ImageView imageView = (ImageView)listItemView.findViewById(R.id.icon_image);
+        ImageView imageView = (ImageView) listItemView.findViewById(R.id.icon_image);
         if (tourItem.hasImage()) {
             imageView.setImageResource(tourItem.getImageResourceId());
         } else {
@@ -111,9 +109,8 @@ public class TourItemAdapter extends ArrayAdapter<TourItem> {
         // Set the background color of each item on the page
         int color = ContextCompat.getColor(getContext(), mBackgroundColor);
         imageView.setBackgroundColor(color);
-        LinearLayout linearLayout = (LinearLayout)listItemView.findViewById(R.id.title_and_description_container);
+        LinearLayout linearLayout = (LinearLayout) listItemView.findViewById(R.id.title_and_description_container);
         linearLayout.setBackgroundColor(color);
-
 
 
         return listItemView;

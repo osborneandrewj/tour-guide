@@ -33,7 +33,7 @@ public class HotelsFragment extends Fragment {
                 getString(R.string.hotel_1_description),
                 null,
                 true,
-                R.drawable.bed,
+                R.drawable.shangri_la,
                 true,
                 1074));
         tourItemsList.add(new TourItem(getString(R.string.hotel_5),
@@ -77,7 +77,7 @@ public class HotelsFragment extends Fragment {
         TourItemAdapter tourItemAdapter = new TourItemAdapter(getActivity(), tourItemsList, R.color.fragment_background);
 
         // Create a ListView and set the custom ArrayAdapter as its adapter
-        ListView listView = (ListView)rootView.findViewById(R.id.list);
+        ListView listView = (ListView) rootView.findViewById(R.id.list);
         listView.setAdapter(tourItemAdapter);
 
         return rootView;

@@ -44,12 +44,27 @@ public class DiningFragment extends Fragment {
                 getString(R.string.dining_1_hours),
                 true,
                 R.drawable.dinner_icon));
+        tourItemsList.add(new TourItem(getString(R.string.dining_4),
+                getString(R.string.dining_4_description),
+                getString(R.string.dining_1_hours),
+                true,
+                R.drawable.dinner_icon));
+        tourItemsList.add(new TourItem(getString(R.string.dining_5),
+                getString(R.string.dining_5_description),
+                getString(R.string.dining_1_hours),
+                false,
+                R.drawable.dinner_icon));
+        tourItemsList.add(new TourItem(getString(R.string.dining_6),
+                getString(R.string.dining_6_description),
+                getString(R.string.dining_1_hours),
+                true,
+                R.drawable.dinner_icon));
 
         // Construct a custom ArrayAdapter and give it tourItemsList ArrayList
         TourItemAdapter tourItemAdapter = new TourItemAdapter(getActivity(), tourItemsList, R.color.fragment_background);
 
         // Create a ListView and set the custom ArrayAdapter as its adapter
-        ListView listView = (ListView)rootView.findViewById(R.id.list);
+        ListView listView = (ListView) rootView.findViewById(R.id.list);
         listView.setAdapter(tourItemAdapter);
 
         return rootView;

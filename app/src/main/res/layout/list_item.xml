@@ -14,8 +14,9 @@
             android:id="@+id/icon_image"
             android:layout_width="@dimen/list_item_height"
             android:layout_height="@dimen/list_item_height"
-            android:paddingLeft="8dp"
-            android:paddingRight="8dp"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp"
+            android:scaleType="centerCrop"
             android:src="@drawable/map" />
 
         <LinearLayout
@@ -33,17 +34,17 @@
                 android:layout_height="@dimen/half_list_item_height"
                 android:gravity="center_vertical"
                 android:textColor="#000000"
-                android:textStyle="bold"
                 android:textSize="16sp"
+                android:textStyle="bold"
                 tools:text="Sample Title" />
 
             <TextView
                 android:id="@+id/item_description"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/half_list_item_height"
-                android:textSize="16sp"
                 android:gravity="center_vertical"
                 android:textColor="#757575"
+                android:textSize="16sp"
                 tools:text="Sample Description blah blah blah" />
 
             <LinearLayout
@@ -55,20 +56,20 @@
                     android:id="@+id/item_open"
                     android:layout_width="match_parent"
                     android:layout_height="24dp"
-                    android:textSize="16sp"
                     android:layout_weight="1"
                     android:gravity="center_vertical"
                     android:textColor="#757575"
+                    android:textSize="16sp"
                     tools:text="Sample open" />
 
                 <TextView
                     android:id="@+id/item_hours"
                     android:layout_width="match_parent"
                     android:layout_height="24dp"
-                    android:textSize="16sp"
                     android:layout_weight="1"
                     android:gravity="center_vertical|end"
                     android:textColor="#757575"
+                    android:textSize="16sp"
                     tools:text="Sample hours" />
 
             </LinearLayout>

@@ -49,7 +49,7 @@
     <string name="hotel_4_description">Five-star luxury hotel set in a world-famous shopping district</string>
 
     <string name="hotel_5">Hotel Raphael</string>
-    <string name="hotel_5_description">Featuring views of the Arch de Triumph and the Eiffel Tower</string>
+    <string name="hotel_5_description">Featuring views of the Arch de Triomph and the Eiffel Tower</string>
 
     <string name="hotel_6">Residence Alma Marceau</string>
     <string name="hotel_6_description">World class hotel featuring 10 full-service apartments</string>
@@ -67,16 +67,42 @@
     <string name="dining_3_description">Honk Kong meets Paris in the imagination of chef Adeline Grattard</string>
     <string name="dining_3_hours">Hours: 3PM-12AM</string>
 
-    <string name="dining_4"></string>
-    <string name="dining_4_description"></string>
+    <string name="dining_4">Le Meurice</string>
+    <string name="dining_4_description">Glamorous Dining at the Hotel Meurice</string>
     <string name="dining_4_hours">Hours: 3PM-12AM</string>
 
-    <string name="dining_5"></string>
-    <string name="dining_5_description"></string>
+    <string name="dining_5">L\u0027Astrance</string>
+    <string name="dining_5_description">Parisian haute cuisine by chef Pascal Barbot</string>
     <string name="dining_5_hours">Hours: 3PM-12AM</string>
 
-    <string name="dining_6"></string>
-    <string name="dining_6_description"></string>
+    <string name="dining_6">Huitrerie Regis</string>
+    <string name="dining_6_description">Atlantic seafood from Marennes-Ol\u00E9ron and Loire valley wines</string>
     <string name="dining_6_hours">Hours: 3PM-12AM</string>
+
+    <!--Shopping page-->
+    <string name="shopping_1">Avenue des Champs Elys\u00E9es</string>
+    <string name="shopping_1_description">Start and the Arc de Triomphe and head toward Place de La Concorde</string>
+    <string name="shopping_1_hours">Hours: 9AM-10PM</string>
+
+    <string name="shopping_2">Rue du Passy</string>
+    <string name="shopping_2_description">Narrow street filled with a variety of boutiques</string>
+    <string name="shopping_2_hours">Hours: 9AM-10PM</string>
+
+    <string name="shopping_3">Boulevard Haussmann</string>
+    <string name="shopping_3_description">See the famous Printemps and Galeries Lafayettes</string>
+    <string name="shopping_3_hours">Hours: 9AM-10PM</string>
+
+    <string name="shopping_4">Avenue Montaigne</string>
+    <string name="shopping_4_description">Designer shops Yves Saint Laurent and Gucci near the Seine</string>
+    <string name="shopping_4_hours">Hours: 9AM-10PM</string>
+
+    <string name="shopping_5">Boulevards Saint Michel and Saint Germain</string>
+    <string name="shopping_5_description">Perpendicular Boulevards with shops and La Sorbonne university</string>
+    <string name="shopping_5_hours">Hours: 9AM-10PM</string>
+
+    <string name="shopping_6">Rue de Rivoli\u002DLe Marais</string>
+    <string name="shopping_6_description">One of the oldest shopping streets in Paris</string>
+    <string name="shopping_6_hours">Hours: 9AM-10PM</string>
+
 
 </resources>

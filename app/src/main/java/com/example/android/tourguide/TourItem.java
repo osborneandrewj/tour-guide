@@ -1,51 +1,58 @@
 package com.example.android.tourguide;
 
 /**
- * Created by osbor on 11/29/2016.
+ * Created by osborne on 11/29/2016.
  */
 
 public class TourItem {
 
-    /** A name of the list item **/
-    private String mTourItemTitle;
-    /** A description of the list item **/
-    private String mTourItemDescription;
-    /** The listed hours of the item **/
-    private String mTourItemHours;
-    /** boolean to store the open/closed status of item **/
-    private boolean mIsOpen;
-    /** Stores the icon image resource ID of the item **/
-    private int mImageResourceId = NO_IMAGE;
-    /** Used to determine if list item has an image **/
-    private static final int NO_IMAGE = -1;
-    /** boolean to set the Hotel status of an item **/
-    private boolean mIsHotel = NOT_HOTEL;
-    /** used to determine if item is a hotel **/
-    private static final boolean NOT_HOTEL = false;
-    /** Stores the price of a hotel item **/
-    private int mHotelPrice;
-
-
     /**
-     * Construct a new TourItem object.
-     *
-     * @param aTitle for the item
-     * @param aDescription for the item
-     * @param aAddress is the item's address
-     */
-    public TourItem(String aTitle, String aDescription, String aAddress) {
-        mTourItemTitle = aTitle;
-        mTourItemDescription = aDescription;
-    }
+     * A name of the list item
+     **/
+    private String mTourItemTitle;
+    /**
+     * A description of the list item
+     **/
+    private String mTourItemDescription;
+    /**
+     * The listed hours of the item
+     **/
+    private String mTourItemHours;
+    /**
+     * boolean to store the open/closed status of item
+     **/
+    private boolean mIsOpen;
+    /**
+     * Stores the icon image resource ID of the item
+     **/
+    private int mImageResourceId = NO_IMAGE;
+    /**
+     * Used to determine if list item has an image
+     **/
+    private static final int NO_IMAGE = -1;
+    /**
+     * boolean to set the Hotel status of an item
+     **/
+    private boolean mIsHotel = NOT_HOTEL;
+    /**
+     * used to determine if item is a hotel
+     **/
+    private static final boolean NOT_HOTEL = false;
+    /**
+     * Stores the price of a hotel item
+     **/
+    private int mHotelPrice;
 
     /**
      * Construct a new TourItem object
      *
-     * @param aTitle for the item
+     * @param aTitle       for the item
      * @param aDescription for the item
-     * @param aHours that item is open
-     * @param isOpen true for open, false for closed
-     * @param aImage is the image resource ID
+     * @param aHours       that item is open
+     * @param isOpen       true for open, false for closed
+     * @param aImage       is the image resource ID
+     * @param isHotel      boolean is this object a hotel?
+     * @param hotelPrice   price per night of hotel
      */
     public TourItem(String aTitle, String aDescription, String aHours, boolean isOpen, int aImage,
                     boolean isHotel, int hotelPrice) {
@@ -61,11 +68,11 @@ public class TourItem {
     /**
      * Construct a new TourItem object
      *
-     * @param aTitle for the item
+     * @param aTitle       for the item
      * @param aDescription for the item
-     * @param aHours that item is open
-     * @param isOpen true for open, false for closed
-     * @param aImage is the image resource ID
+     * @param aHours       that item is open
+     * @param isOpen       true for open, false for closed
+     * @param aImage       is the image resource ID
      */
     public TourItem(String aTitle, String aDescription, String aHours, boolean isOpen, int aImage) {
         mTourItemTitle = aTitle;
@@ -107,7 +114,7 @@ public class TourItem {
      *
      * @return true if item is open for business
      */
-    public boolean getIsOpen(){
+    public boolean getIsOpen() {
         return mIsOpen;
     }
 

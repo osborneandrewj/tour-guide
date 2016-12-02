@@ -33,38 +33,38 @@ public class MustSeeFragment extends Fragment {
                 getString(R.string.must_see_1_description),
                 getString(R.string.must_see_1_hours),
                 false,
-                R.drawable.map));
+                R.drawable.eiffel_tower));
         tourItemsList.add(new TourItem(getString(R.string.must_see_2),
                 getString(R.string.must_see_2_description),
                 getString(R.string.must_see_2_hours),
                 true,
-                R.drawable.map));
+                R.drawable.arc_triomphe));
         tourItemsList.add(new TourItem(getString(R.string.must_see_3),
                 getString(R.string.must_see_3_description),
                 getString(R.string.must_see_3_hours),
                 true,
-                R.drawable.map));
+                R.drawable.montmarte));
         tourItemsList.add(new TourItem(getString(R.string.must_see_4),
                 getString(R.string.must_see_4_description),
                 getString(R.string.must_see_4_hours),
                 false,
-                R.drawable.map));
+                R.drawable.sacre_coeur));
         tourItemsList.add(new TourItem(getString(R.string.must_see_5),
                 getString(R.string.must_see_5_description),
                 getString(R.string.must_see_5_hours),
                 true,
-                R.drawable.map));
+                R.drawable.les_invalides));
         tourItemsList.add(new TourItem(getString(R.string.must_see_6),
                 getString(R.string.must_see_6_description),
                 getString(R.string.must_see_6_hours),
                 false,
-                R.drawable.map));
+                R.drawable.notre_dame));
 
         // Construct a custom ArrayAdapter and give it tourItemsList ArrayList
         TourItemAdapter tourItemAdapter = new TourItemAdapter(getActivity(), tourItemsList, R.color.fragment_background);
 
         // Create a ListView and set the custom ArrayAdapter as its adapter
-        ListView listView = (ListView)rootView.findViewById(R.id.list);
+        ListView listView = (ListView) rootView.findViewById(R.id.list);
         listView.setAdapter(tourItemAdapter);
 
         return rootView;
