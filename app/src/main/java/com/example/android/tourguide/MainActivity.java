@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
 
         // Get the ViewPager and set it's PagerAdapter so that it can display the tabs
         ViewPager viewPager = (ViewPager) findViewById(R.id.viewpager);
-        viewPager.setAdapter(new FragmentPagerAdapter(getSupportFragmentManager()));
+        viewPager.setAdapter(new FragmentPagerAdapter(getSupportFragmentManager(), getApplication()));
 
         // Give the Sliding Tabs to the viewpager
         TabLayout tabLayout = (TabLayout) findViewById(R.id.sliding_tabs);

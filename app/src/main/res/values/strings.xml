@@ -1,6 +1,12 @@
 <resources>
     <string name="app_name">Visit Paris</string>
 
+    <!--Fragment names for PagerAdapter-->
+    <string name="see">see</string>
+    <string name="eat">eat</string>
+    <string name="shop">shop</string>
+    <string name="sleep">sleep</string>
+
     <!--Used for the open/closed text of each list item-->
     <string name="open_text">Open now</string>
     <string name="closed_text">Closed</string>
@@ -37,7 +43,7 @@
 
     <!--Hotel page-->
     <string name="hotel_1">Shangri-La Hotel Paris</string>
-    <string name="hotel_1_description">Located along Avenue de l\u00E9na\u002C this hotel is known for exceptional service</string>
+    <string name="hotel_1_description">Located along Avenue de l\u00E9na\u002C and known for exceptional service</string>
 
     <string name="hotel_2">H\u00F4tel Fouquet\u0027s Barri\u00E8re</string>
     <string name="hotel_2_description">Recipient of 2013 Cond\u00E9 Nast Traveler World Savers Award</string>

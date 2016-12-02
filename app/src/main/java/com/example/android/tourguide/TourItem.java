@@ -153,5 +153,4 @@ public class TourItem {
     public String getHotelPrice() {
         return Integer.toString(mHotelPrice);
     }
-
 }

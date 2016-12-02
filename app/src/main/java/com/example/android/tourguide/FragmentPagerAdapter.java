@@ -1,5 +1,7 @@
 package com.example.android.tourguide;
 
+import android.content.res.Resources;
+import android.content.Context;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 
@@ -15,10 +17,17 @@ public class FragmentPagerAdapter extends android.support.v4.app.FragmentPagerAd
     private final int FRAGMENT_COUNT = 4;
 
     /**
+     * Used to pass in the application's context to the class
+     */
+    private Context mContext;
+
+
+    /**
      * Default constructor
      */
-    public FragmentPagerAdapter(FragmentManager fm) {
+    public FragmentPagerAdapter(FragmentManager fm, Context context) {
         super(fm);
+        mContext = context;
     }
 
     /**
@@ -67,17 +76,13 @@ public class FragmentPagerAdapter extends android.support.v4.app.FragmentPagerAd
     public CharSequence getPageTitle(int position) {
         switch (position) {
             case 0:
-                position = 0;
-                return "Must See";
+                return mContext.getString(R.string.see);
             case 1:
-                position = 1;
-                return "Dining";
+                return mContext.getString(R.string.eat);
             case 2:
-                position = 2;
-                return "Shopping";
+                return mContext.getString(R.string.shop);
             case 3:
-                position = 3;
-                return "Hotels";
+                return mContext.getString(R.string.sleep);
             default:
                 return null;
         }

@@ -3,6 +3,7 @@ package com.example.android.tourguide;
 import android.content.Context;
 import android.graphics.Color;
 import android.support.v4.content.ContextCompat;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -67,6 +68,8 @@ public class TourItemAdapter extends ArrayAdapter<TourItem> {
         if (tourItem.isHotel()) {
             // Set the hotel price
             itemHours.setText(getContext().getString(R.string.dollar_currency) + tourItem.getHotelPrice());
+            // Move the text to the right side of screen
+            itemHours.setGravity(Gravity.END);
             //set room availability status
             if (tourItem.getIsOpen()) {
                 // If rooms available, set text to reflect this
